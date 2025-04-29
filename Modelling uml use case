@@ -1,0 +1,78 @@
+1. Use Cases :
+Enter Text: User inputs text content (poem, story, etc.).
+
+Analyze Text: System detects mood, emotion, and tone.
+
+Generate Music: System creates music based on analysis.
+
+Play Music: User can listen to the generated music.
+
+Pause/Stop Music: Control playback.
+
+Download Music: User can download music in MP3/WAV format.
+
+Share Music: Option to share music via social media or link.
+
+Save History: Save previously generated music pieces.
+
+Edit Text: User can modify text before regeneration.
+
+Provide Feedback: User submits feedback on music quality.
+
+2. Relationships Among Use Cases :
+Include: Analyze Text is always included when Generate Music is triggered.
+
+Include: Play Music includes Pause/Stop Music for control.
+
+Extend: Download Music extends Play Music (optional after listening).
+
+Extend: Share Music extends Play Music (optional after listening).
+
+Include: Edit Text includes Enter Text (reusing text input).
+
+Association: User is associated with all use cases directly.
+
+Include: Save History is included after successful music generation.
+
+Extend: Provide Feedback is an optional extension after music playback.
+
+Generalization: Guest and Registered User inherit from User with extra options (like Save History).
+
+Include: Generate Music includes Select Music Style (e.g., classical, jazz) for advanced users.
+
+3. UML Use Case Diagram: Detailed Representation:
+Actors:
+
+Primary Actor: User
+
+Secondary Actors: External music engine (as a system)
+
+System Boundary:
+Labelled as “Text-to-Music Converting System”
+
+Use Case Symbols:
+Ovals used to represent each use case (e.g., Generate Music).
+
+Relationships:
+
+Solid lines for associations
+
+Arrows with <<include>> and <<extend>> appropriately labeled
+
+Actor Interaction:
+Clear mapping of user actions like input, playback, download.
+
+Modularity:
+Related use cases are grouped (e.g., Playback Group, Sharing Group)
+
+User Types:
+Show variations between Guest and Registered User using generalization arrows.
+
+Optional Features:
+Use <<extend>> to highlight optional actions (e.g., Feedback, Share Music).
+
+Data Flow Hints:
+Though not mandatory in use case diagrams, textual annotations may describe outcomes (like “generates MP3”).
+
+Clear Naming:
+All use cases have descriptive names (e.g., Analyze Text vs. Process).
