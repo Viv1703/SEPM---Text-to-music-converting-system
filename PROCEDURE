@@ -1,0 +1,18 @@
+Procedure:
+User Input:
+The user enters text (e.g., a paragraph, story, or lyrics) into the system.
+
+Text Analysis:
+The system uses Natural Language Processing (NLP) to analyze the text's mood, tone, and sentiment (e.g., happy, sad, energetic).
+
+Music Mapping:
+Based on the analysis, the system maps the detected emotions to musical elements (tempo, scale, instruments, etc.).
+
+Music Generation:
+An AI music engine generates a short music piece reflecting the mood and structure of the text.
+
+Playback & Preview:
+The user can play, pause, and replay the generated music through an audio player interface.
+
+Download & Share:
+The user can download the music or share it via a link or social media.
