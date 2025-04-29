@@ -1,0 +1,37 @@
+Advantages:
+Accurate Estimation:
+Provides a structured and relatively accurate way to estimate effort, time, and cost based on project size.
+
+Project Planning Aid:
+Helps in breaking down the project lifecycle into phases, supporting better planning and scheduling.
+
+Resource Management:
+Assists in determining the required team size and timeline, optimizing resource allocation.
+
+Risk Identification:
+Highlights potential risks based on project complexity and type (organic, semi-detached, embedded).
+
+Customizable:
+The model can be adjusted with real-world project data for better accuracy over time.
+
+Benchmarking Tool:
+Useful for comparing with other similar projects to evaluate performance and efficiency.
+
+Disadvantages:
+Requires Accurate Inputs:
+Estimates can be inaccurate if initial data (like LOC or complexity) is incorrect or unavailable.
+
+Not Ideal for New Technologies:
+Less effective for modern AI-based systems or non-traditional software where size and effort don’t directly correlate.
+
+Static Model:
+Doesn’t adapt well to rapid changes or evolving project requirements (common in creative AI systems).
+
+Limited in Small Projects:
+May be too complex or unnecessary for small-scale or quick development projects.
+
+Assumes Waterfall Model:
+Works best with traditional waterfall approaches and may not fit well with agile or iterative development.
+
+No Quality Prediction:
+It focuses on cost and effort but doesn’t directly account for software quality or user experience.
