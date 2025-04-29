@@ -1,0 +1,54 @@
+Actors:
+
+User: Initiates the interaction by entering text.
+
+Objects (Lifelines):
+
+TextInput: Accepts and holds the user’s input text.
+
+NLPProcessor: Analyzes the text for mood/emotion.
+
+MoodAnalyzer: Determines the specific emotional tone.
+
+MusicGenerator: Creates a music track based on mood.
+
+MusicTrack: Represents the generated audio file.
+
+AudioPlayer: Handles playback actions like play/pause.
+
+Feedback: Records user feedback after listening.
+
+Messages:
+
+Solid arrows with operation names (e.g., submitText(), analyzeMood(), generateMusic()).
+
+Dashed arrows for return messages (e.g., return mood, return track).
+
+Lifelines:
+
+Vertical dashed lines below each object representing their existence over time.
+
+Activation Bars:
+
+Rectangles on lifelines showing when an object is active/performing an operation.
+
+Synchronous Messages:
+
+Regular calls (e.g., generateMusic()), expecting a response.
+
+Asynchronous Messages:
+
+Used for notifications or independent operations (optional, e.g., sendFeedback()).
+
+Return Messages:
+
+Responses to method calls, often labeled with data returned (e.g., trackID, mood).
+
+Conditions/Guards (optional):
+
+[if mood detected] before a message to show conditional flow.
+
+Loops or Fragments (optional):
+
+For repetitive or optional steps (e.g., loop [playback controls]).
+
