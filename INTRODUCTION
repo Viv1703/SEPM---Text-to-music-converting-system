@@ -1,0 +1,76 @@
+1. Introduction
+1.1 Purpose
+The purpose of this document is to specify the software requirements for a system that converts text into music. This system aims to assist users, especially non-musicians, in generating music based on the emotional and thematic content of textual input.
+
+1.2 Scope
+The Text-to-Music Converting System will accept text input from users, analyze its sentiment, mood, or theme, and generate music that reflects the analyzed characteristics. It will offer playback, download, and sharing functionalities through a user-friendly interface.
+
+1.3 Definitions
+NLP: Natural Language Processing
+
+DAW: Digital Audio Workstation
+
+MP3/WAV: Common audio file formats
+
+2. Overall Description
+2.1 Product Perspective
+This is a standalone web-based application that utilizes AI/ML for sentiment analysis and music generation.
+
+2.2 User Characteristics
+Basic knowledge of how to use web applications
+
+Interest in music or content creation
+
+No technical background required
+
+2.3 Assumptions and Dependencies
+Internet access is required
+
+Uses third-party APIs for music synthesis or AI models
+
+3. Functional Requirements
+FR1: The system shall allow users to input free-form text.
+
+FR2: The system shall analyze the sentiment, tone, and theme of the input text.
+
+FR3: The system shall generate music that reflects the analysis of the text.
+
+FR4: The system shall allow users to play the generated music.
+
+FR5: The system shall allow users to download the generated music.
+
+FR6: The system shall allow users to share the music via a link or social media.
+
+FR7: The system shall store recent music generations for user access.
+
+4. Non-Functional Requirements
+NFR1: The system shall generate music within 10 seconds.
+
+NFR2: The system shall be available 99.9% of the time.
+
+NFR3: The UI shall be intuitive and mobile-friendly.
+
+NFR4: The system shall support at least 100 simultaneous users.
+
+NFR5: The system shall protect user data with encryption.
+
+NFR6: The music generated should have at least 80% sentiment-matching accuracy.
+
+5. External Interface Requirements
+5.1 User Interfaces
+Text input box
+
+"Generate Music" button
+
+Music player interface (play, pause, stop)
+
+Download and share options
+
+5.2 Hardware Interfaces
+Compatible with standard modern browsers on desktop and mobile devices
+
+5.3 Software Interfaces
+NLP library (e.g., spaCy or HuggingFace)
+
+Music synthesis engine (e.g., Magenta, AI-powered MIDI generator)
+
