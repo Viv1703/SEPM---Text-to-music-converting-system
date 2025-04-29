@@ -1,0 +1,67 @@
+Program:- 
+pip install textblob pydub pygame
+from textblob import TextBlob
+from pydub import AudioSegment
+import pygame
+import random
+
+# Function to detect mood from text
+def detect_mood(text):
+    blob = TextBlob(text)
+    sentiment = blob.sentiment.polarity
+    
+    if sentiment > 0:
+        return "happy"
+    elif sentiment < 0:
+        return "sad"
+    else:
+        return "neutral"
+
+# Function to generate music based on mood
+def generate_music(mood):
+    # Example paths for simple mood-based audio files
+    if mood == "happy":
+        sound_file = "happy_music.wav"
+    elif mood == "sad":
+        sound_file = "sad_music.wav"
+    else:
+        sound_file = "neutral_music.wav"
+    
+    # Loading the audio file
+    try:
+        music = AudioSegment.from_wav(sound_file)
+        return music
+    except Exception as e:
+        print(f"Error loading music: {e}")
+        return None
+
+# Function to play music
+def play_music(music):
+    if music:
+        # Using pygame to play the audio
+        pygame.mixer.init()
+        pygame.mixer.music.load(music)
+        pygame.mixer.music.play()
+        
+        # Keep the music playing for a while
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+
+# Main function to simulate the system
+def text_to_music_system():
+    # Simulating user input
+    text = input("Enter some text: ")
+    
+    # Detect mood from the input text
+    mood = detect_mood(text)
+    print(f"The detected mood is: {mood}")
+    
+    # Generate music based on the detected mood
+    music = generate_music(mood)
+    
+    # Play the generated music
+    play_music(music)
+    
+# Run the system
+if __name__ == "__main__":
+    text_to_music_system()
