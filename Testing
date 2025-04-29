@@ -1,0 +1,44 @@
+1. Unit Testing:
+Purpose: Test individual components or classes in isolation.
+
+Examples:
+
+Testing analyzeMood() function in NLPProcessor.
+
+Verifying generateMusic() in MusicGenerator returns a valid MP3 file.
+
+Ensuring submitFeedback() correctly stores user input.
+
+2. Integration Testing:
+Purpose: Test interaction between modules.
+
+Examples:
+
+Checking that TextInput successfully passes text to NLPProcessor.
+
+Ensuring the MoodAnalyzer properly integrates with MusicGenerator.
+
+Verifying the audio file returned is playable in the AudioPlayer.
+
+3. System Testing:
+Purpose: Validate the entire system works as intended.
+
+Examples:
+
+Full workflow: User enters text → mood analyzed → music generated → played.
+
+Checking system behavior under different moods, languages, and text lengths.
+
+Ensuring system handles errors gracefully (e.g., empty input, unsupported format).
+
+4. Acceptance Testing:
+Purpose: Ensure the system meets business requirements and user expectations.
+
+Examples:
+
+User feedback confirms music reflects emotional tone of input text.
+
+Music plays correctly and feedback options work.
+
+Tests performed by stakeholders or end-users to approve delivery.
+
