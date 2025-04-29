@@ -1,0 +1,31 @@
+COCOMO Basic Formula:
+Effort (Person-Months) = a × (KLOC)^b
+Development Time (Months) = c × (Effort)^d
+
+a, b, c, d are constants based on the project type:
+For a Semi-Detached project (moderate complexity AI-based system):
+
+a = 3.0, b = 1.12, c = 2.5, d = 0.35
+
+Assumptions:
+Estimated size of the project = 15,000 lines of code (15 KLOC)
+
+Developer cost = INR 80,000 per month
+
+Step 1: Effort Estimation
+Effort = 3.0 × (15)^1.12 ≈ 3.0 × 22.44 ≈ 67.32 Person-Months
+
+Step 2: Time Estimation
+Time = 2.5 × (67.32)^0.35 ≈ 2.5 × 4.49 ≈ 11.23 Months
+
+Step 3: Cost Estimation
+Total Cost = Effort × Cost per Month
+= 67.32 × 80,000
+= INR 53,85,600
+
+Summary:
+Estimated Effort: ~67 person-months
+
+Development Time: ~11.2 months
+
+Estimated Cost: ~INR 53.86 lakhs
